@@ -1793,7 +1793,7 @@ let msg = generateWAMessageFromContent(from, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image : fs.readFileSync('./asset/image/thum.jpeg')}, { upload: Inziehosting.waUploadToServer})), 
-                  title: '`AUTO UPDATE YT InzieOfc`',
+                  title: '`KESYA X RIDHO`',
                   gifPlayback: false,
                   subtitle: ownername,
                   hasMediaAttachment: false  
@@ -1805,20 +1805,8 @@ let msg = generateWAMessageFromContent(from, {
                 "buttonParamsJson": `{"display_text":"SEMUA MENU","id":"${prefix}allmenu"}`
               },              
               {
-                 "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YOUTUBE\",\"url\":\"https://youtube.com/@InzieOfc\",\"merchant_url\":\"https://www.google.com\"}"
-              },              
-              {
-                 "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GITHUB\",\"url\":\"https://github.com/@BotAnjayy\",\"merchant_url\":\"https://www.google.com\"}"
-              },                          
-              {
                 "name": "quick_reply",
                 "buttonParamsJson": `{"display_text":"OWNER","id":"${prefix}owner"}`
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": `{"display_text":"SCRIPT","id":"${prefix}script"}`
               }
            ],
           }),
@@ -3146,22 +3134,6 @@ let msg = generateWAMessageFromContent(from, {
             {
                 "name": "quick_reply",
                 "buttonParamsJson": `{"display_text":"KEMBALI","id":"${prefix}menu"}`
-              },              
-              {
-                 "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YOUTUBE\",\"url\":\"https://youtube.com/@InzieOfc\",\"merchant_url\":\"https://www.google.com\"}"
-              },              
-              {
-                 "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GITHUB\",\"url\":\"https://github.com/@BotAnjayy\",\"merchant_url\":\"https://www.google.com\"}"
-              },                          
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": `{"display_text":"OWNER","id":"${prefix}owner"}`
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": `{"display_text":"SCRIPT","id":"${prefix}script"}`
               }
            ],
           }),
